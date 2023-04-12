@@ -16,7 +16,7 @@ interface Cycle {
   task: string
   minutesAmount: number
   startDate: Date
-  interrupetdDate?: Date
+  interruptedDate?: Date
   finishedDate?: Date
 }
 
