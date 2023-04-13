@@ -7,6 +7,7 @@ export enum ActionTypes {
 }
 
 export function addNewCycleAction(newCycle: Cycle) {
+  console.log('oie')
   return {
     type: ActionTypes.ADD_NEW_CYCLE,
     payload: {
@@ -15,11 +16,13 @@ export function addNewCycleAction(newCycle: Cycle) {
   }
 }
 export function markCurrentCycleAsFinishedAction() {
+  console.log('parou')
   return {
     type: ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
   }
 }
 export function interruptCurrentCycleAction() {
+  console.log('finished')
   return {
     type: ActionTypes.INTERRUPT_CURRENT_CYCLE,
   }
